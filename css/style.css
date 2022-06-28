@@ -1,0 +1,327 @@
+:root {
+  --blue: #223d4d;
+  --ltblue: #beefff;
+}
+
+/* remove default CSS styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* general style settings */
+body {
+  font-family: Roboto,Helvetica, Arial, sans-serif;
+  color: black;
+  background-color: lightblue;
+}
+
+/* header styling */
+header {
+  background-color: var(--blue);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+
+/* Name box header */
+header h1 {
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: var(--ltblue);
+  padding: 20px;
+  }
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+header nav {
+  margin: 20px;
+}
+
+header nav ul li a {
+  padding: 8px;
+  font-size: 28px;
+  margin: 20px 20px 0 0;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  background: var(--ltblue);
+  color:white;
+  border-radius: 40px;
+}
+
+
+
+/* img styling */
+.robert {
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.robert img {
+  height: 400px;
+}
+
+.phrase {
+  font-size: 35px;
+  text-align: right;
+}
+
+#phrase-text {
+  font-size: 48px;
+}
+
+/* utility class styling start */
+.title {
+  border-right: 5px solid var(--blue);
+  min-height: 100%;
+  text-align: left;
+  padding-left: 20px;
+  min-width: 20%;
+  max-width: 20%;
+}
+
+.title h2 {
+  font-size: 48px;
+}
+
+/* about me section styling */
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 30px;
+}
+
+.about-me p {
+  font-size: 20px;
+  padding: 0 30px;
+  line-height: 1.5;
+  width: 100%;
+}
+
+/* my work section */
+.my-work {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-work h2 {
+  color: black;
+}
+
+.project-grid {
+  width: 90%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-layout {
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+
+.work {
+  border: solid;
+  color: rgb(250, 252, 252);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  padding-bottom: 10px;
+}
+
+.project:hover {
+  opacity: 1.0;
+}
+
+.project1 {
+  grid-column: 1 / span 2;
+  grid-row: span 2;
+  }
+
+.project2 {
+  
+}
+
+.project3 {
+  
+}
+
+.project4 {
+ 
+}
+
+.project5 {
+}
+
+.project-label {
+  background-color: rgb(20, 193, 224);
+  color: black;
+  padding: 15px;
+}
+
+
+/* contact me section */
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contact {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-list {
+  width: 60%;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+footer ul li {
+  font-weight: bold;
+
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+  font-weight: bold;
+}
+
+footer ul li a:hover {
+  background: lightgray;
+  color: black;
+  border-radius: 15px;
+}
+
+/* MEDIA QUERY FOR TABLET SCREENS AND SMALLER */
+@media screen and (max-width: 768px) {
+  .phrase {
+      font-size: 28px;
+      padding-right: 20px;
+  }
+  
+  #phrase-text {
+      font-size: 35px;
+  }
+
+  .title h2 {
+      font-size: 35px;
+  }
+
+  .about-me p {
+      font-size: 16px;
+      line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  header {
+      justify-content: center;
+      padding: 20px;
+  }
+
+  header nav ul {
+      min-height: 80px;
+  }
+
+  .robert {
+      flex-direction: column;
+  }
+
+  .about-me {
+      flex-direction: column;
+  }
+
+  .title {
+      border-bottom: 5px solid black;
+      border-right: none;
+      text-align: center;
+      min-width: 100%;
+      max-width: 100%;
+      padding: 0;
+  }
+
+  .about-me p {
+      font-size: 16px;
+      line-height: 1.5;
+      width: 100%;
+      padding: 15px;
+  }
+
+  .my-work {
+      flex-direction: column;
+      padding: 30px 0;
+  }
+
+  .project-grid {
+      width: 100%;
+      padding: 10px;
+  }
+  
+  .grid-layout {
+      width: 80%;
+  }
+
+  footer {
+      flex-direction: column;
+  }
+
+  footer ul {
+      flex-direction: column;
+  }
+
+  .contact {
+      width: 100%;
+  }
+
+  footer ul li {
+      padding: 10px;
+      text-align: center;
+  }
+  
+}
