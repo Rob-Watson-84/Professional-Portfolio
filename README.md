@@ -22,9 +22,9 @@ The following animation shows the web application's appearance and functionality
 
 ## Review
 
-* The URL of the deployed application: 
+* The URL of the deployed application: https://rob-watson-84.github.io/Professional-Portfolio/
 
-* The URL of the GitHub repository that contains my code: 
+* The URL of the GitHub repository that contains my code: https://github.com/Rob-Watson-84/Professional-Portfolio
 
 - - -
 © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
