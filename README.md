@@ -17,7 +17,7 @@ SO THAT I can review samples of their work and assess whether they're a good can
 
 The following animation shows the web application's appearance and functionality requested to replicate:
 
-![portfolio demo](../../02-Advanced-CSS/02-Challenge/Assets/02-advanced-css-homework-demo.gif)
+![portfolio demo](../Professional-Portfolio/02-advanced-css-homework-demo.gif)
 
 
 ## Review
