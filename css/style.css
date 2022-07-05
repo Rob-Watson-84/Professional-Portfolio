@@ -11,11 +11,15 @@
   font-family: 'Roboto', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* general style settings */
+/* general style settings for page */
 body {
   font-family: Roboto,Helvetica, Arial, sans-serif;
   color: black;
   background-color: lightblue;
+}
+
+body, html {
+  height: 100%;
 }
 
 /* header styling */
@@ -26,7 +30,6 @@ header {
   flex-wrap: wrap;
   padding: 10px;
 }
-
 
 /* Name box header */
 header h1 {
@@ -66,31 +69,28 @@ header nav ul li a:hover {
   border-radius: 40px;
 }
 
-
-
-/* img styling */
-.robert {
-  height: 600px;
-  background-size: cover;
-  background-position: center;
+.self-image {
+  position:center;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-image: url(../../../..//wall.jpg)
 }
 
-.robert img {
-  height: 400px;
+.hero-image {
+  height: 500px;
+  filter: grayscale(100%)
 }
 
-.phrase {
-  font-size: 35px;
-  text-align: right;
+/* White text in center of picture */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
-
-#phrase-text {
-  font-size: 48px;
-}
-
 /* utility class styling start */
 .title {
   border-right: 5px solid var(--blue);
@@ -146,6 +146,7 @@ header nav ul li a:hover {
   gap: 10px;
 }
 
+/* Style for each project label */
 .work {
   border: solid;
   color: rgb(250, 252, 252);
@@ -159,28 +160,50 @@ header nav ul li a:hover {
   padding-bottom: 10px;
 }
 
-.project:hover {
+.work:hover {
   opacity: 1.0;
 }
 
 .project1 {
   grid-column: 1 / span 2;
   grid-row: span 2;
+  background-color: var(--blue);
+  background-image: url(../../../01-HTML-Git-CSS/02-Challenge/Assets/01-html-css-git-homework-demo.png);
+  background-size: auto;
+  background-position: 40% 0;
+  background-repeat: no-repeat;
   }
 
 .project2 {
-  
+  background-color: var(--blue);
+  background-image: url(../../../../../Bootcamp/Week2_Challenge/password_generator.png);
+  background-position: 90% 70%;
+  background-size: 70%;
+  background-repeat: no-repeat;
 }
 
 .project3 {
-  
+  background-color: var(--blue);
+  background-image: url(../../../../Week2_Challenge/api-development.jpg);
+  background-position: 90% 70%;
+  background-size: 70%;
+  background-repeat: no-repeat;
 }
 
 .project4 {
- 
+  background-color: var(--blue);
+  background-image: url(../../../../Week2_Challenge/Mobile_app.jpg);
+  background-position: 90% 70%;
+  background-size: 70%;
+  background-repeat: no-repeat;
 }
 
 .project5 {
+  background-color: var(--blue);
+  background-image: url(../../../../Week2_Challenge/sudoku.jpg);
+  background-position: 90% 70%;
+  background-size: 70%;
+  background-repeat: no-repeat;
 }
 
 .project-label {
@@ -195,8 +218,8 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 30px;
-  margin-bottom: 30px;
+  padding-block: 30px;
+  background-color: var(--blue);
 }
 
 .contact {
@@ -233,7 +256,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-  background: lightgray;
+  background: var(--ltblue);
   color: black;
   border-radius: 15px;
 }
